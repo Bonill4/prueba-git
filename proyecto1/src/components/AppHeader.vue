@@ -30,7 +30,7 @@
 
 			<br />
 
-			<select v-model="selected">
+			<select v-model="selecte">
 				<option disabled value="">Seleciona un deporte</option>
 				<option>Futbol</option>
 				<option>Baloncesto</option>
@@ -40,7 +40,7 @@
 
 			<br />
 
-			<span>De mis deportes favoritos: {{ selected }}</span>
+			<span>De mis deportes favoritos: {{ selecte }}</span>
 
 			<br />
 
@@ -86,6 +86,8 @@ export default {
 			edad: 12,
 
 			seen: false,
+
+			selecte: '',
 
 			selected: 'A',
 			options: [
